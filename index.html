@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшая форма</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="im/1.jpg" alt="Логотип" class="header-photo">
+            <div class="text-content">
+                <h1><span>Лучшая</span> форма</h1>
+                <hr class="separator">
+                <p class="subtext">Всего за <span>30</span> дней!</p>
+            </div>
+            <img src="im/2.jpg" alt="Логотип" class="header-photo">
+        </div>
+    </header>
+    
+    <section id="youtube">
+        <h2><span>Как</span> это сделать ?</h2>
+        <iframe src="https://www.youtube.com/embed/exampleVSL" allowfullscreen></iframe>
+    </section>
+    
+    <section id="lectures">
+        <h2><span>Что</span> для этого нужно ?</h2>
+        <div class="lecture" onclick="showModal('lecture1')">
+            <h3>1. Рекомпозиция тела</h3>
+            <p class="details">Подробнее...</p>
+            <img src="im/5.jpg" alt="Рекомпозиция">
+        </div>
+        <div class="lecture" onclick="showModal('lecture2')">
+            <h3>2. Правильное питание</h3>
+            <p class="details">Подробнее...</p>
+            <img src="im/4.jpg" alt="Питание">
+        </div>
+        <div class="lecture" onclick="showModal('lecture3')">
+            <h3>3. Владение телом</h3>
+            <p class="details">Подробнее...</p>
+            <img src="im/6.jpg" alt="Владение телом">
+        </div>
+        <div class="lecture" onclick="showModal('lecture4')">
+            <h3>4. Дисциплина</h3>
+            <p class="details">Подробнее...</p>
+            <img src="im/3.jpg" alt="Дисциплина">
+        </div>
+    </section>
+    
+    
+    
+    <section id="offer">
+        <h2>Индивидуальное онлайн-ведение</h2>
+        <p>Получите индивидуальные программы, адаптированные под ваши цели, включая тренировки, питание, подсчет калорий и восстановление. Мы поможем вам достичь максимальных результатов.</p>
+        <a href="https://t.me/Vladimre_bot" class="cta-button" target="_blank">Записаться</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Лучшая форма. Все права защищены.</p>
+    </footer>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="Логотип" alt="Изображение">
+            <div id="modal-content"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
